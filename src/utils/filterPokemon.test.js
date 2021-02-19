@@ -3,18 +3,16 @@ import { mockPokemonsData } from "../mock/pokeData";
 
 describe("Filter Pokemon", () => {
   test("it should return an array", () => {
-    /* Your solution comes here */
-    expect(false).toBe(true);
+    expect(filterPokemon()).toEqual(Array.isArray());
   });
 
   test("it should return an empty array", () => {
-    /* Your solution comes here */
-    expect(false).toBe(true);
+    const arrayLength = filterPokemon().length;
+    expect(arrayLength).toHaveLength(0);
   });
 
   test("it should return an array with charizard object", () => {
-    /* Your solution comes here */
-    expect(false).toBe(true);
+    expect(filterPokemon()).toEqual(expect.arrayContaining("charizzard"));
   });
 
   /* BUNUS */
